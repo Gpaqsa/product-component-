@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body style */
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Main-contetn */
+main {
+    width: 700px;
+    height: 500px;
+    /* background-color: rgb(207, 207, 207); */
+    display: flex;
+}
+/* Image-content style */
+.image-content {
+    width: 350px;
+    height: 100%;
+}
+.image-content .image {
+    height: 100%;
+    width: 100%;
+}
+/* Text-content style */
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 350px;
+    word-spacing: 5px;
+}
+
+/* Main-text styles */
+.main-text .main-title {
+    width: 350px;
+    height: 100%;
+    word-spacing: 10px;
+}
+.main-title {
+    font-size: 34px;
+    margin-top: 50px;
+}
+.main-text > span {
+    position: absolute;
+    width: 350px;
+    word-spacing: 2px;
+}
+/* Price content style  */
+
+.price-content {
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price-content .price-text {
+    font-size: 34px;
+    color: hsl(158, 36%, 37%);
+}
+
+.price-content > span {
+    text-decoration: line-through;
+}
+
+/* Button content style */
+.button-content {
+    position: relative;
+    top: 200px;
+    width: 300px;
+    margin: 0px 20px;
+    background-color: hsl(158, 36%, 37%);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button-content button {
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.button-content:hover {
+    background-color: darkslategray;
+}
+.button-content:active {
+    background-color:  hsl(228, 12%, 48%);
+}
+
+.span-text {
+    font-weight: 500;
+    word-spacing: 5px;
+    word-wrap: break-word;
+}
+
+
+@media screen and (max-width: 375px){
+   body {
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+   }
+
+   main {
+     width: 100%;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 50px;
+   }
+
+   .image-content .image{
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+   }
+
+   .main-text {
+    margin: 20px;
+   }
+   .span-text {
+    margin: 30px;
+   }
+}
